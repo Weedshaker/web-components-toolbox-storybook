@@ -31,6 +31,7 @@
   --steps-color-white: #ffffff;
   --steps-color-light-grey: #f6f6f6;
   --steps-color-grey: #6c6c6c;
+  --steps-color-grey-dark: #1c181c;
   --steps-color-red-dark: #bd0f15;
   --steps-color-red: #f04249;
   --steps-color-red-light: #f7a1a4;
@@ -75,6 +76,9 @@
   --button-secondary-padding: 0.25rem 0.75rem;
   --a-margin: 0;
 
+  /* general spacing concept */
+  --component-spacing: 2rem;
+
   /* border radius */
   --border-radius: 2.5rem;
   --button-secondary-border-radius: var(--border-radius);
@@ -117,4 +121,12 @@
   --navigation-default-a-link-text-align-mobile-custom: center;
   --navigation-default-arrow-display: none;
   --navigation-default-a-link-content-spacing-no-scroll-custom: 0.5rem;
+
+  /* content dark */
+  --content-dark-h1-color: var(--steps-color-red);
+  --content-dark-align-items: normal;
+}
+
+.l-outer {
+  padding-bottom: 2rem;
 }

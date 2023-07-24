@@ -6,7 +6,7 @@ import { Shadow } from '../../web-components-toolbox/src/es/components/prototype
  * An example at: src/es/components/pages/Home.html
  *
  * @export
- * @class EventList
+ * @class Stage
  * @type {CustomElementConstructor}
  */
 
@@ -32,6 +32,8 @@ export default class Stage extends Shadow() {
     this.css = /* css */`
       :host {
         position: relative;
+        --content-spacing: 0;
+        padding-bottom: var(--component-spacing);
       }
 
       :host .stage__overlay {

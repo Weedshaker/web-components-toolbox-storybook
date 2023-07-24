@@ -28,7 +28,7 @@ export default class Events extends Shadow() {
 
     this.abortController = null
     this.requestListEventsListener = async event => {
-      console.log("hooooooooi!", event.detail)
+      console.log('hooooooooi!', event.detail)
       if (this.abortController) this.abortController.abort()
       this.abortController = new AbortController()
       // TODO: event.detail.pushHistory if yes this.setTag()
@@ -36,8 +36,8 @@ export default class Events extends Shadow() {
         method: 'GET',
         signal: this.abortController.signal
       }
-      let endpoint = this.getAttribute('endpoint') + '?' + 'tags=' + event.detail.tags
-      /*this.dispatchEvent(new CustomEvent(this.getAttribute('list-events') || 'list-events', {
+      const endpoint = this.getAttribute('endpoint') + '?' + 'tags=' + event.detail.tags
+      /* this.dispatchEvent(new CustomEvent(this.getAttribute('list-events') || 'list-events', {
         detail: {
           fetch: (this._fetch || (this._fetch = fetch(endpoint, fetchOptions))).then(response => {
             if (response.status >= 200 && response.status <= 299) {
@@ -50,7 +50,7 @@ export default class Events extends Shadow() {
         bubbles: true,
         cancelable: true,
         composed: true
-      }))*/
+      })) */
       this.dispatchEvent(new CustomEvent(this.getAttribute('list-events') || 'list-events', {
         detail: {
           test: 'hooooooi'

@@ -1,107 +1,167 @@
-<o-steps-stage>
-  <div class="stage__picture">
-    <a-picture
-      loading="eager"
-      tabindex="0"
-      loaded-bad-quality="true"
-      loaded="true"
-      namespace="picture-full-"
-    >
-      <picture>
-        <source media="(min-width:768px)" data-srcset="http://via.placeholder.com/1500x980" srcset="http://via.placeholder.com/1500x980">
-        <img data-src="http://via.placeholder.com/1500x980" decoding="sync" loading="eager" src="http://via.placeholder.com/1500x980">
-      </picture>
-    </a-picture>
-  </div>
-  <div class="stage__overlay">
-    <div class="stage__content">
-      <h2>Save the Date!</h2>
-      <span>Next Steps:</span>
-      <span>24.4. - 19.5.2024</span>
-      <a-button
-        namespace="button-steps-"
-        href="#"
-        target="_self"
+<o-body-style background-color=var(--steps-color-grey-dark)>
+  <o-steps-stage>
+    <div class="stage__picture">
+      <a-picture
+        loading="eager"
         tabindex="0"
-        data-href="/spielplan"
-        role="link"
-        hover=""
-        class="stage__button"
+        loaded-bad-quality="true"
+        loaded="true"
+        namespace="picture-full-"
       >
-        <style>
-          :host a {
-            position: relative;
-          }
-
-          :host a svg {
-            position: absolute;
-            right: 1.5rem;
-            transition: right 0.3s ease-in-out;
-          }
-
-          :host a:hover svg {
-            right: 1rem;
-          }
-
-          @media (max-width: 768px) {
-            :host a {
-              padding: 16px 48px 16px 24px; /* mobile variable ? */
-            }
-
-            :host a span {
-              font-size: 16px;
-            }
-
-            :host a svg {
-              right: 2rem;
-            }
-
-            :host a:hover svg {
-              right: 1.5rem;
-            }
-          }
-        </style>
-        <a href="/spielplan" target="_self" type="button">
-          <span id="label">Jetzt Newsletter abonnieren</span>
-          <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3.83398 8.49992H13.1673M13.1673 8.49992L8.50065 3.83325M13.1673 8.49992L8.50065 13.1666" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
-      </a-button>
+        <picture>
+          <source media="(min-width:768px)" data-srcset="http://via.placeholder.com/1500x980" srcset="http://via.placeholder.com/1500x980">
+          <img data-src="http://via.placeholder.com/1500x980" decoding="sync" loading="eager" src="http://via.placeholder.com/1500x980">
+        </picture>
+      </a-picture>
     </div>
-  </div>
-</o-steps-stage>
+    <div class="stage__overlay">
+      <div class="stage__content">
+        <h2>Save the Date!</h2>
+        <span>Next Steps:</span>
+        <span>24.4. - 19.5.2024</span>
+        <a-button
+          namespace="button-steps-"
+          href="#"
+          target="_self"
+          tabindex="0"
+          data-href="/spielplan"
+          role="link"
+          hover=""
+          class="stage__button"
+        >
+          <style>
+            :host a {
+              position: relative;
+            }
+  
+            :host a svg {
+              position: absolute;
+              right: 1.5rem;
+              transition: right 0.3s ease-in-out;
+            }
+  
+            :host a:hover svg {
+              right: 1rem;
+            }
+  
+            @media (max-width: 768px) {
+              :host a {
+                padding: 16px 48px 16px 24px; /* mobile variable ? */
+              }
+  
+              :host a span {
+                font-size: 16px;
+              }
+  
+              :host a svg {
+                right: 2rem;
+              }
+  
+              :host a:hover svg {
+                right: 1.5rem;
+              }
+            }
+          </style>
+          <a href="/spielplan" target="_self" type="button">
+            <span id="label">Jetzt Newsletter abonnieren</span>
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.83398 8.49992H13.1673M13.1673 8.49992L8.50065 3.83325M13.1673 8.49992L8.50065 13.1666" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </a-button>
+      </div>
+    </div>
+  </o-steps-stage>
 
-<section>
-  <h1>Headline 1</h1>
-  <h2>Headline 2</h2>
-  <h3>Headline 3</h3>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor
-    <u>incididunt ut labore</u> et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation <i>ullamco laboris nisi</i> ut aliquip ex ea
-    commodo consequat. Duis aute irure dolor in reprehenderit involuptate velit
-    esse cillum dolore eu <b>fugiat nulla pariatur</b>.Excepteur sint occaecat
-    cupidatat <strike>non proident</strike>, sunt in culpa qui
-    <a href="#">officia deserunt mollit</a> anim id est laborum.
-  </p>
-  <p>&nbsp;</p>
-  <p>
-    <a href="#">
-      <strong>Link with additional html &lt;strong&gt; tag</strong>
-    </a>
-  </p>
-  <p>
-    <a href="#">Link with css <code>font-weight: bold;</code> </a>
-  </p>
-  <p>&nbsp;</p>
-  <div>
-    <a-button namespace="button-secondary-">Button</a-button>
-    <a-button namespace="button-secondary-" disabled>Button</a-button
-    ><br /><br />
-    <a-button namespace="button-quaternary-">Button</a-button>
-    <a-button namespace="button-quaternary-" disabled>Button</a-button>
-  </div>
-  <p>&nbsp;</p>
-</section>
+  <o-wrapper namespace="content-dark-">
+    <style>
+      :host {
+        padding-bottom: var(--component-spacing);
+      } 
+      :host p {
+        color: var(--steps-color-white);
+      }
+    </style>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestias ad nulla itaque sint beatae quibusdam architecto magni, recusandae possimus non aut inventore omnis ipsum dolores modi sed! Nisi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestias ad nulla itaque sint beatae quibusdam architecto magni, recusandae possimus non aut inventore omnis ipsum dolores modi sed! Nisi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestias ad nulla itaque sint beatae quibusdam architecto magni, recusandae possimus non aut inventore omnis ipsum dolores modi sed! Nisi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestias ad nulla itaque sint beatae quibusdam architecto magni, recusandae possimus non aut inventore omnis ipsum dolores modi sed! Nisi!</p>
+  </o-wrapper>
+
+  <o-wrapper namespace="content-dark-">
+    <style>
+      :host {
+        padding-bottom: var(--component-spacing);
+      } 
+      :host p {
+        color: var(--steps-color-white);
+      }
+    </style>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestias ad nulla itaque sint beatae quibusdam architecto magni, recusandae possimus non aut inventore omnis ipsum dolores modi sed! Nisi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestias ad nulla itaque sint beatae quibusdam architecto magni, recusandae possimus non aut inventore omnis ipsum dolores modi sed! Nisi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestias ad nulla itaque sint beatae quibusdam architecto magni, recusandae possimus non aut inventore omnis ipsum dolores modi sed! Nisi!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam molestias ad nulla itaque sint beatae quibusdam architecto magni, recusandae possimus non aut inventore omnis ipsum dolores modi sed! Nisi!</p>
+  </o-wrapper>
+  
+  <m-steps-tiles>
+    <div class="tiles__wrapper">
+      <a href="#" class="tiles__tile">
+        <h1 class="tiles__title">Programm</h1>
+        <a-picture
+        loading="eager"
+        tabindex="0"
+        loaded-bad-quality="true"
+        loaded="true"
+        namespace="picture-cover-"
+        >
+          <picture>
+            <source media="(min-width:768px)" data-srcset="http://via.placeholder.com/350x350" srcset="http://via.placeholder.com/350x350">
+            <img data-src="http://via.placeholder.com/350x350" decoding="sync" loading="eager" src="http://via.placeholder.com/350x350">
+          </picture>
+        </a-picture>     
+      </a>
+      <a href="#" class="tiles__tile">
+        <h1 class="tiles__title">News</h1>
+        <a-picture
+        loading="eager"
+        tabindex="0"
+        loaded-bad-quality="true"
+        loaded="true"
+        namespace="picture-cover-"
+        >
+          <picture>
+            <source media="(min-width:768px)" data-srcset="http://via.placeholder.com/350x350" srcset="http://via.placeholder.com/350x350">
+            <img data-src="http://via.placeholder.com/350x350" decoding="sync" loading="eager" src="http://via.placeholder.com/350x350">
+          </picture>
+        </a-picture>     
+      </a>
+      <a href="#" class="tiles__tile">
+        <h1 class="tiles__title">Programm</h1>
+        <a-picture
+        loading="eager"
+        tabindex="0"
+        loaded-bad-quality="true"
+        loaded="true"
+        namespace="picture-cover-"
+        >
+          <picture>
+            <source media="(min-width:768px)" data-srcset="http://via.placeholder.com/350x350" srcset="http://via.placeholder.com/350x350">
+            <img data-src="http://via.placeholder.com/350x350" decoding="sync" loading="eager" src="http://via.placeholder.com/350x350">
+          </picture>
+        </a-picture>     
+      </a>
+      <a href="#" class="tiles__tile">
+        <h1 class="tiles__title">News</h1>
+        <a-picture
+        loading="eager"
+        tabindex="0"
+        loaded-bad-quality="true"
+        loaded="true"
+        namespace="picture-cover-"
+        >
+          <picture>
+            <source media="(min-width:768px)" data-srcset="http://via.placeholder.com/350x350" srcset="http://via.placeholder.com/350x350">
+            <img data-src="http://via.placeholder.com/350x350" decoding="sync" loading="eager" src="http://via.placeholder.com/350x350">
+          </picture>
+        </a-picture>     
+      </a>
+    </div>
+  </m-steps-tiles>
+</o-body-style>
+

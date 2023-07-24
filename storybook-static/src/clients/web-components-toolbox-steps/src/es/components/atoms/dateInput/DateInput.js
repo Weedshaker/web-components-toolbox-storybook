@@ -11,29 +11,29 @@ import { Shadow } from '../../web-components-toolbox/src/es/components/prototype
  */
 
 export default class DateInput extends Shadow() {
-    constructor (options = {}, ...args) {
-        super({ importMetaUrl: import.meta.url, ...options }, ...args)
-    }
+  constructor (options = {}, ...args) {
+    super({ importMetaUrl: import.meta.url, ...options }, ...args)
+  }
 
-    connectedCallback() {
-        if (this.shouldRenderCSS()) {
-          this.renderCSS();
-        } 
-        this.renderHTML();
+  connectedCallback () {
+    if (this.shouldRenderCSS()) {
+      this.renderCSS()
     }
+    this.renderHTML()
+  }
 
-    /**
+  /**
      * evaluates if a render is necessary
      *
      * @return {boolean}
      */
-    shouldRenderCSS () {
-        return !this.root.querySelector(
+  shouldRenderCSS () {
+    return !this.root.querySelector(
             `:host > style[_css], ${this.tagName} > style[_css]`
-        )
-    }
+    )
+  }
 
-    renderCSS () {
+  renderCSS () {
     this.css = /* css */ `
         :host .date-input {
             background-color: transparent;
@@ -61,55 +61,56 @@ export default class DateInput extends Shadow() {
             background: none;
             z-index: 1;
         }
-    `}
+    `
+  }
 
-    renderHTML () {
-        const input = document.createElement('input');
-        const calendarIndicator = " → 📅"
+  renderHTML () {
+    const input = document.createElement('input')
+    const calendarIndicator = ' → 📅'
 
-        input.id = "steps-event-date-picker";
-        input.className = "date-input";
-        input.name = input.id;
-        input.type = "text";
+    input.id = 'steps-event-date-picker'
+    input.className = 'date-input'
+    input.name = input.id
+    input.type = 'text'
 
-        input.onfocus = () => {
-            if (input.value) {
-                const dateValue = input.value.replace(calendarIndicator,'');
-                const parts = dateValue.split(".");
-                const formattedDate = `${parts[2]}-${parts[1].padStart(2, "0")}-${parts[0].padStart(2, "0")}`;
-                input.value = formattedDate;
-            }
-            input.type = "date";
-            input.showPicker();
-        }
-
-        input.onblur = () => {
-            input.type = "text";
-        }
-
-        input.onchange = () => {
-            if (input.value) {
-                const formattedDate = new Date(input.value).toLocaleDateString("de-CH");
-                input.blur();
-                input.value = formattedDate + calendarIndicator;
-            } 
-            if (!input.value) {
-                input.blur();
-            }
-        }
-
-        if (this.hasAttribute('min')) {
-            input.setAttribute('min', this.getAttribute('min'));
-        }
-
-        if (this.hasAttribute('max')) {
-            input.setAttribute('max', this.getAttribute('max'));
-        }
-
-        if (this.hasAttribute('placeholder')) {
-            input.setAttribute('placeholder', this.getAttribute('placeholder') + calendarIndicator);
-        }
-
-        this.html = input
+    input.onfocus = () => {
+      if (input.value) {
+        const dateValue = input.value.replace(calendarIndicator, '')
+        const parts = dateValue.split('.')
+        const formattedDate = `${parts[2]}-${parts[1].padStart(2, '0')}-${parts[0].padStart(2, '0')}`
+        input.value = formattedDate
+      }
+      input.type = 'date'
+      input.showPicker()
     }
+
+    input.onblur = () => {
+      input.type = 'text'
+    }
+
+    input.onchange = () => {
+      if (input.value) {
+        const formattedDate = new Date(input.value).toLocaleDateString('de-CH')
+        input.blur()
+        input.value = formattedDate + calendarIndicator
+      }
+      if (!input.value) {
+        input.blur()
+      }
+    }
+
+    if (this.hasAttribute('min')) {
+      input.setAttribute('min', this.getAttribute('min'))
+    }
+
+    if (this.hasAttribute('max')) {
+      input.setAttribute('max', this.getAttribute('max'))
+    }
+
+    if (this.hasAttribute('placeholder')) {
+      input.setAttribute('placeholder', this.getAttribute('placeholder') + calendarIndicator)
+    }
+
+    this.html = input
+  }
 }

@@ -1,75 +1,63 @@
 {
   "events": [
     {
-      "event": {
-        "choreographer": "Botis Seva",
-        "compagnieName": "BLKDOG",
-        "icons": [
-          "uebertitel",
-          "einfuehrung",
-          "nachbesprechung",
-          "familien"
-        ],
-        "productionTitle": "BLKDOG",
-        "soldOut": "False",
-        "dateTime": "15.08.2024 18:00:00"
-      },
-      "location": {
-        "name": "Zürich",
-        "subline": "Théatre du Passage, ADN",
-        "icons": [
-          "hoerbenachteiligung",
-          "rollstuhlgaengig"
-        ]
-      }
+      "choreographer": "Botis Seva",
+      "company": "BLKDOG",
+      "companyDetailPageUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-steps",
+      "eventDate": "15.08.2024 18:00:00",
+      "eventInformationIcons": [
+        "/src/img/icons/icon-uebertitel.svg",
+        "/src/img/icons/icon-einfuehrung.svg",
+        "/src/img/icons/icon-nachbesprechung.svg",
+        "/src/img/icons/icon-familien.svg"
+      ],
+      "location": "Zürich",
+      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-steps",
+      "production": "BLKDOG",
+      "soldOut": "False",
+      "theater": "Théatre du Passage, ADN",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-hoerbenachteiligung.svg",
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ]
     },
     {
-      "event": {
-        "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
-        "compagnieName": "Marc Brew Company | Eastman (GBR | BEL)",
-        "icons": [
-          "uebertitel",
-          "einfuehrung"
-        ],
-        "productionTitle": "Les Porte-Voix – Cabaret Ventriloque",
-        "soldOut": "True",
-        "dateTime": "24.12.2023 18:30:00"
-      },
-      "location": {
-        "name": "St. Gallen",
-        "subline": "Theater St. Gallen, Schauspielhaus",
-        "icons": [
-          "hoerbenachteiligung"
-        ]
-      }
+      "choreographer": "Marc Brew, Sidi Larbi Cherkaoui",
+      "company": "Marc Brew Company | Eastman (GBR | BEL)",
+      "companyDetailPageUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-steps",
+      "eventDate": "24.12.2023 18:30:00",
+      "eventInformationIcons": [
+        "/src/img/icons/icon-uebertitel.svg",
+        "/src/img/icons/icon-einfuehrung.svg"
+      ],
+      "location": "St. Gallen",
+      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-steps",
+      "production": "Les Porte-Voix – Cabaret Ventriloque",
+      "soldOut": "True",
+      "theater": "Theater St. Gallen, Schauspielhaus",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-hoerbenachteiligung.svg"
+      ]
     },
     {
-      "event": {
-        "choreographer": "Millena Muster",
-        "compagnieName": "Mustername (CH)",
-        "icons": [
-          "uebertitel",
-          "einfuehrung",
-          "nachbesprechung"
-        ],
-        "productionTitle": "Muster Yeah",
-        "soldOut": "False",
-        "dateTime": "05.08.2024 09:05:00"
-      },
-      "location": {
-        "name": "Basel",
-        "subline": "Kaserne Muster Muster auf",
-        "icons": [
-          "hoerbenachteiligung",
-          "rollstuhlgaengig"
-        ]
-      }
+      "choreographer": "Millena Muster",
+      "company": "Mustername (CH)",
+      "companyDetailPageUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-steps",
+      "eventDate": "05.08.2024 09:05:00",
+      "eventInformationIcons": [
+        "/src/img/icons/icon-uebertitel.svg",
+        "/src/img/icons/icon-einfuehrung.svg",
+        "/src/img/icons/icon-nachbesprechung.svg"
+      ],
+      "location": "Basel",
+      "presaleUrl": "https://engagement.migros.ch/de/news-projekte/kulturfoerderung/tanzfestival-steps",
+      "production": "Muster Yeah",
+      "soldOut": "False",
+      "theater": "Kaserne Muster Muster auf",
+      "theaterInformationIcons": [
+        "/src/img/icons/icon-hoerbenachteiligung.svg",
+        "/src/img/icons/icon-rollstuhlgaengig.svg"
+      ]
     }
-  ],
-  "translations" : {
-    "buttonTickets": "Tickets",
-    "linkDetails": "Mehr Details",
-    "soldOut": "ausverkauft",
-    "timeSuffix": "Uhr"
-  }
+  ]
 }
