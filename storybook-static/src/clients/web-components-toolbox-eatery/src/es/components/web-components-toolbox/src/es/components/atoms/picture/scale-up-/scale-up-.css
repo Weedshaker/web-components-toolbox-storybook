@@ -1,4 +1,0 @@
-:host {
-  --picture-scale-up-transform-hover: scale(1.05,1.05);
-  --picture-scale-up-transition: transform .5s ease-out;
-}

@@ -1,4 +1,0 @@
-[submodule "src/es/components/web-components-toolbox"]
-	path = src/es/components/web-components-toolbox
-	url = https://github.com/mits-gossau/web-components-toolbox.git
-	ignore = dirty

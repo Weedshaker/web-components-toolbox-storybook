@@ -1,7 +1,0 @@
-:host {
-    --underline-color-hover: var(--underline-color-hover-custom, var(--color-hover));
-    --underline-color: var(--underline-color-custom, var(--color-secondary));
-    --underline-font-family: var(--font-family-bold);
-    --underline-height: auto;
-    --underline-padding: 0;
-}

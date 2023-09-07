@@ -1,4 +1,0 @@
-try{
-var d=__STORYBOOKADDONS__,{addons:t,types:_,mockChannel:b}=__STORYBOOKADDONS__;var T=__STORYBOOKTHEMING__,{CacheProvider:C,ClassNames:x,Global:y,ThemeProvider:F,background:u,color:B,convert:S,create:s,createCache:k,createGlobal:N,createReset:R,css:v,darken:w,ensure:D,ignoreSsrWarning:G,isPropValid:I,jsx:K,keyframes:P,lighten:Y,styled:E,themes:A,typography:H,useTheme:M,withTheme:W}=__STORYBOOKTHEMING__;var a=s({base:"light",brandTitle:"Web Components",brandUrl:"https://mits-gossau.github.io/web-components-toolbox-storybook/storybook-static/",brandImage:"src/assets/images/web-components.png",brandTarget:"_self",colorPrimary:"#FF6600",colorSecondary:"#FF6600",textColor:"#333333",textInverseColor:"#ffffff",appBg:"#FFF3EB",appBorderColor:"#FFB380"});t.setConfig({theme:a});
-}catch(e){ console.error("[Storybook] One of your manager-entries failed: " + import.meta.url, e); }
-//# sourceMappingURL=manager-bundle.js.map

@@ -11,7 +11,7 @@ module.exports = {
       measure: false,
       outline: false
     }
-  }, 'storybook-addon-themes', '@storybook/addon-mdx-gfm'],
+  }, 'storybook-addon-themes'],
   framework: {
     name: '@storybook/web-components-webpack5',
     options: {}
