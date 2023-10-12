@@ -18,5 +18,8 @@ module.exports = {
   },
   docs: {
     autodocs: false
-  }
+  },
+  core: {
+    disableTelemetry: true
+  },
 }
