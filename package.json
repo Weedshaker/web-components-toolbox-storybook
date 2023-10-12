@@ -16,11 +16,13 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
     "@etchteam/storybook-addon-css-variables-theme": "^1.5.1",
     "@playwright/test": "^1.39.0",
     "@storybook/addon-actions": "^7.4.6",
     "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-links": "^7.4.6",
+    "@storybook/addon-mdx-gfm": "^7.4.6",
     "@storybook/blocks": "^7.4.6",
     "@storybook/web-components": "^7.4.6",
     "@storybook/web-components-webpack5": "^7.4.6",
