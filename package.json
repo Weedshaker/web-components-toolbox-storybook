@@ -38,6 +38,6 @@
     "storybook": "^7.4.6",
     "storybook-addon-themes": "^6.1.0",
     "style-loader": "^3.3.3",
-    "webpack": "^5.88.2"
+    "webpack": "^5.89.0"
   }
 }
